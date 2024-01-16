@@ -21,7 +21,6 @@ export const GET = async (request , {params}) => {
 // Patch (update)
 export const PATCH = async (req , { params }) => {
     const {prompt , tag} = await req.json();
-    console.log('hello');
 
     try{
 

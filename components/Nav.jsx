@@ -8,7 +8,7 @@ import { useSession, signIn, signOut, getProviders } from "next-auth/react";
 const Nav = () => {
   
   const { data: session } = useSession()
-  // The reason for using useSession() to access session data is to provide a faster and more efficient way to check a user's authentication status and access basic user information without repeatedly querying the database. Here are a few benefits:
+  // The reason for using useSession() to access session data is to provide a faster and more efficient way to check a user's authentication status and access basic user information without repeatedly querying the database
 
   const [providers, setProviders] = useState(null);
   const [toggleDropDown , setToggleDropDown] = useState(false)
